@@ -364,7 +364,7 @@ h3 .siguenos-footer {
 /* FOOTER*/
 .footer-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(384px, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(384px, 1fr));
   grid-gap: 20px;
   padding: 20px;
   background-color: #011433;
