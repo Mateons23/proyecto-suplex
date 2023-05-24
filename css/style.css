@@ -418,10 +418,6 @@ h3 .siguenos-footer {
 }
 
 
-.newsletter-section {
-  flex-basis: 100%;
-  margin-top: 20px;
-}
 
 @media (min-width: 768px) {
   .footer-grid {
