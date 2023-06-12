@@ -1,0 +1,39 @@
+/* BLOG */
+.sec-blog {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background-color: #ecdfe0;
+  }
+  
+  .img-blog {
+    height: 50vh;
+    width: 40vw;
+  }
+  
+  .p-info {
+    width: 42vw;
+  }
+/* BLOG */
+  
+/* BLOG responsive*/
+  @media screen and (max-width: 768px) {
+    .sec-blog {
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+    }
+  
+    .img-blog {
+      height: auto;
+      width: 100%;
+      margin-bottom: 1rem;
+    }
+  
+    .p-info {
+      width: 80vw;
+    }
+  }
+/* BLOG responsive*/
+
+  

@@ -1,0 +1,140 @@
+@mixin flex-center {
+  display: flex;
+  align-items: center;
+}
+
+@mixin grid-columns($columns) {
+  grid-template-columns: repeat($columns, 1fr);
+}
+
+/* sección de artículos en venta */
+.sec-prod {
+  display: grid;
+  @include grid-columns(3);
+  grid-gap: 20px;
+  justify-content: center;
+  text-align: center;
+  padding: 10px;
+  max-width: 1200px;
+  margin: 0 auto;
+  
+  @media (min-width: 769px) and (max-width: 1024px)
+   {
+    @include grid-columns(2);
+    .product {
+      height: 41vh;
+      width: 80%;
+      object-fit: contain; 
+      margin: 0 auto;
+    }
+  }
+  
+}
+
+.div-prod {
+  border: solid 2px black;
+  height: 55vh;
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 2rem;
+}
+
+.product {
+  height: 41vh;
+  width: 80%;
+  object-fit: cover;
+  margin: 0 auto;
+}
+
+.p-item {
+  text-align: center;
+  height: 4vh;
+}
+
+.span-precio {
+  display: block;
+  margin-top: 2.3vh;
+  text-align: center;
+  font-weight: bold;
+}
+
+.boton-comprar {
+  display: inline-block;
+  padding: 2.5vh 2.7vw;
+  background-color: black;
+  color: white;
+  font-family: "bitter";
+  text-align: center;
+  text-decoration: none;
+  font-size: 2.3vh;
+  border-radius: 4px;
+  margin: 1vh;
+  box-shadow: black 0px 8px 6px;
+  transition: transform 0.4s ease;
+
+  &:hover {
+    transform: scale(1.09);
+  }
+}
+
+/* Estilos para resoluciones de 768px o menores */
+@media (max-width: 768px) {
+  .sec-prod {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+    max-width: 600px;
+    margin: 0 auto;
+  }
+
+  .div-prod {
+    border: solid 2px black;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 20px;
+    margin-bottom: 20px;
+  }
+
+  .product {
+    height: auto;
+    width: 80%;
+    object-fit: cover;
+    margin: 0 auto;
+  }
+
+  .p-item {
+    text-align: center;
+    height: auto;
+  }
+
+  .span-precio {
+    display: block;
+    margin-top: 2.3vh;
+    text-align: center;
+    font-weight: bold;
+  }
+
+  .boton-comprar {
+    display: inline-block;
+    padding: 2.5vh 2.7vw;
+    background-color: black;
+    color: white;
+    font-family: "bitter";
+    text-align: center;
+    text-decoration: none;
+    font-size: 2.3vh;
+    border-radius: 4px;
+    margin: 1vh;
+    box-shadow: black 0px 8px 6px;
+    transition: transform 0.4s ease;
+
+    &:hover {
+      transform: scale(1.09);
+    }
+  }
+}
