@@ -26,6 +26,16 @@ h3 .siguenos-footer {
   padding: 20px;
   background-color: $primary-color;
   color: wheat;
+
+  .map-footer-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+
+  .newsletter-section {
+    width: 100%;
+  }
 }
 
 .div-footer {
@@ -67,10 +77,6 @@ h3 .siguenos-footer {
   font-size: 14px;
 }
 
-.map-footer-container {
-  flex: 1 1 300px;
-}
-
 .map-footer {
   width: 100%;
   height: 200px;
@@ -92,6 +98,8 @@ h3 .siguenos-footer {
   .map-footer-container {
     grid-column: 1;
     grid-row: 1;
+    display: flex;
+    justify-content: center;
   }
 
   .newsletter-section {
@@ -109,3 +117,4 @@ h3 .siguenos-footer {
     font-size: 14px;
   }
 }
+
