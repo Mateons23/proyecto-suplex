@@ -315,6 +315,7 @@ h3 .siguenos-footer {
 .form-cont {
   display: flex;
   flex-direction: column;
+  align-items: center;
   gap: 2vh;
   background-color: #ecdfe0;
   color: black;
